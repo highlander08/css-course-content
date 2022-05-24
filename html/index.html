@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Sarabun:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -8,17 +8,33 @@
 <body>
 
 <h1 id="title">My Website</h1>
+<h4 class="value"> Subtitle Website</h4>
+<h5 class="value sub-value">classe separadas</h5>
+
+<hr>
 
 <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.</p>
 
+<hr>
 <h2 class="subtitle" id="about-me">About Me</h2>
+<hr>
 
-<img src="../img/img-1.jpg" id="about-us-image">
+<img src="../img/img-1.jpg" id="about-us-image"alt="About us images">
+<hr width="100%">
+<img src="../img/img-2.jpg" id="about-us-image"alt="About us images">
+<hr width="100%">
+<div class="img-high"></div>
+<hr>
+<div class="img-gradi"></div>
+<hr>
+
 
 <p class="para-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<hr>
 
 <span class="italics">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -27,17 +43,48 @@ consequat.
 
 Cillum dolore eu fugiat nulla , pariatur:
 
+<hr>
+
+<div><p>This is a paragraph.</p></div>
+
+<div><span>This is a span.</span><p>This is a paragraph.</p></div>
+<hr>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a href="https://google.com/" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<hr>
+
 	<ul>
+		<li >nerymar junior</li>
+		<li >nerymar junior</li>
+		<li >nerymar junior</li>
+		<li >nerymar junior</li>
+
+   <li class="list-item-zero">highlander dev</li>
+		<li class="list-item-zero">highlander dev</li>
+		<li class="list-item-zero">highlander dev</li>
+		<li class="list-item-zero">highlander dev</li>
+
 		<li class="list-item">Excepteur sint occaecat</li>
+		<li class="list-item">Excepteur sint occaecat</li>
+		<li class="list-item">Excepteur sint occaecat</li>
+		<li class="list-item">Excepteur sint occaecat</li>
+
 		<ol>
-			<li class="list-item">My numbered list item</li>
+			<li style="color:rgb(64, 214, 9)">My numbered list item</li>
+			<li class="list-item-one">My numbered list item</li>
 		</ol>
 	</ul>
 </p>
-
+<hr>
 <h2 class="subtitle">Services</h2>
+<hr>
 
 <a href="http://www.google.com" class="link">Click here to go to Google</a>
+<hr>
 
 <table border="1" class="site-table">
 	<thead>
@@ -116,14 +163,15 @@ Cillum dolore eu fugiat nulla , pariatur:
 <form>
 	<input type="text" placeholder="Full Name" class="form-input">
 	<input type="email" placeholder="Email" class="form-input">
-	<textarea></textarea>
+	<label for="w3review">Review of W3Schools:</label>
+
+	<textarea id="w3review" name="w3review" rows="4" cols="50">
+	At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+	</textarea>
+	<button class="submit">Submit</button>
+	<span class="submit">highlander jogador</span>	
+
 	<button class="submit-button">Submit</button>	
 </form>
-
-
-
-
-
-
 </body>
 </html>

@@ -1,17 +1,94 @@
 body {
 	background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
+	/* background-image: url(../img/img-1.jpg); */
+	/* background: url('https://s3.amazonaws.com/') */
+	/* background-repeat: no-repeat; */
+	/* opacity: 0.8.; */
 	font-size: 1.15em;
 	text-align: justify;
 	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
 }
-
+.list-item:nth-child(n){
+	color: red;
+}
+.list-item-one:nth-child(2){
+color: red;
+}
+/* paragrafo que so ele é filho */
+p:only-child {
+	color: yellow
+}
 input, textarea {
 	display: block;
 	margin: 10px;
 }
+/* link inicial */
+a:link {
+  color: red;
+}
+/* depois que clicar */
+a:visited {
+  color: green;
+}
 
+/* passar o mouse emcima */
+a:hover {
+  color: hotpink;
+}
+
+/* quando selecionar */
+a:active {
+  color: blue;
+}
+/* tudo que vier depois do h1 depois do hr aplique algo */
+h1 + hr + .para-text {
+	color: blue;
+}
+/* tudo que vier depois do textarea aplique algo */
+ textarea ~ .submit {
+	 color: red;
+ }
+ /* pegar todos as class depois da ul */
+ ul > .list-item-zero {
+color: purple
+ }
+ ul li {
+	 color: orange
+ }
+ h4[class=value] {
+	 color: red
+ }
+
+ /* img[src*="../img/"]{
+	 border-radius: 50px;
+ } */
+
+ img[src^="../img/"]{
+	 border-radius: 50%;
+ }
+h5[class~='sub-value']{
+	color: blue
+}
+.img-high{
+	background: url('https://avatars.githubusercontent.com/u/38596921?v=4');
+/* background-size: cover; */
+	height: 10rem;
+	background-color: aqua;
+	background-repeat: no-repeat
+}
+.img-gradi{
+	height: 200px;
+width: 200px;
+	background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(189,70,252,1) 100%);
+margin-left: 50%;
+}
 #title {
-	color: rgb(186, 133, 9);
+	color: rgba(125, 89, 65, 0.9);
 	font-family: "Sarabun", sans-serif;
 }
 
@@ -21,20 +98,24 @@ input, textarea {
 }
 
 #service-image {
-	height: 400px;
+	height: 200px;
 	width: 70vw;
 
 	background: radial-gradient(circle, red 20%, blue 40%, green 55%);
 	border: 10px solid rgb(28, 28, 79);
+
 }
 
 .link {
 	text-decoration: underline;
+	/* text-decoration: none; */
+
 }
 
 .italics {
 	font-style: italic;
 }
+
 
 #about-us-image {
 	height: 300px;
