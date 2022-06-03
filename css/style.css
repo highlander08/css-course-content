@@ -114,10 +114,12 @@ h5[class~='sub-value'] {
 
 #service-image {
 	height: 200px;
-	width: 70vw;
+	width: 20vw;
 
 	background: radial-gradient(circle, red 20%, blue 40%, green 55%);
 	border: 10px solid rgb(28, 28, 79);
+
+	float: left;
 
 }
 
@@ -152,9 +154,10 @@ h5[class~='sub-value'] {
 	height: 300px;
 
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	/* flex-direction: column-reverse; */
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .container-item {
@@ -186,6 +189,14 @@ h5[class~='sub-value'] {
 	width: 70px;
 	line-height: 40px;
 	margin: 10px;
+}
+
+.grid-container-high{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
+	justify-content: center; 
+	align-items: center;
 }
 
 .submit-button {
